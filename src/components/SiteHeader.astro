@@ -1,0 +1,160 @@
+---
+import NavMenu from "./NavMenu.astro";
+---
+
+<div class="header-container">
+	<a href="/" class="branding-container">
+		<div class="logo-container">
+			<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" preserveAspectRatio="xMidYMid meet">
+				<g transform="matrix(0.58347578,0,0,0.58347578,862.08547,218.80342)">
+					<circle class="logo-border" transform="translate(0,22.5)" style="fill: none; stroke-width: 75px;" cx="-600" cy="480" r="840"/>
+					<path class="logo-w" d="m -1125,630 285,570 h 120 l 120,-240 120,240 h 120 L -75,630 H -255 L -420,960 -510,780 -390,540 -540,240 h -60 v 240 l 30,60 -30,60 -30,-60 30,-60 V 240 h -60 l -150,300 120,240 -90,180 -165,-330 z"/>
+					<path class="logo-a" d="m -1125,570 405,-810 h 240 L -75,570 H -255 L -570,-60 h -60 l -315,630 z"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="title-container">
+			<div class="title"><span class="red-letter">a</span>rndt<span class="red-letter">w</span>are</div>
+		</div>
+	</a>
+
+	<div class="menu-container">
+		<div class="desktop-menu">
+			<a class="menu-item" href="/services">Services</a>
+			<a class="menu-item" href="/about">About</a>
+			<a class="menu-item" href="/contact">Contact</a>
+		</div>
+		<div class="mobile-menu">
+			<input id="menu-toggle" type="checkbox" />
+			<label class='menu-button-container' for="menu-toggle">
+				<div class='menu-button'></div>
+			</label>
+			<!-- <ul class="menu">
+				<a class="menu-item" href="/services">Services</a>
+				<a class="menu-item" href="/about">About</a>
+				<a class="menu-item" href="/contact">Contact</a>
+			</ul> -->
+		</div>
+	</div>
+</div>
+<style>
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		background-color: var(--header-background-color);
+		backdrop-filter: blur(2px);
+		-webkit-backdrop-filter: blur(2px)
+	}
+
+	.menu-container {
+		align-self: center;
+		color: var(--primary-text-color);
+		padding-right: 1.5rem;
+	}
+
+	.branding-container {
+		display: flex;
+		text-decoration: none;
+	}
+
+	.logo-container, .title-container {
+		align-self: center;
+		display: flex;
+	}
+
+	.title {
+		padding: 0 0.25rem 0.25rem 0;
+		font-size: 2rem;
+		color: var(--primary-text-color);
+		font-family: 'Righteous';
+		text-transform: lowercase;
+	}
+
+	.logo {
+		padding: 0.75rem;
+		height: 3rem;
+		width: 3rem;
+	}
+	.logo-a, .logo-w, .logo-border {
+		fill: var(--primary-text-color);
+		stroke: var(--primary-text-color);
+	}
+	/* #menu-toggle:checked .logo {
+		transform: rotate(1.25turn);
+		transition-duration: 0.7s;
+	}
+	#menu-toggle:checked .logo-a, #menu-toggle:checked .logo-w {
+		fill: var(--alt-text-color);
+	}
+	#menu-toggle:checked .red-letter {
+		color: var(--alt-text-color);
+		transition-duration: 0.3s;
+	} */
+	.menu-item {
+		padding: 0.5rem;
+		font-family: "Righteous";
+		font-size: 1.5rem;
+		text-transform: lowercase;
+		text-decoration: none;
+		color: var(--primary-text-color);
+	}
+	.menu-item:visited {
+		color: var(--primary-text-color);
+	}
+	.menu-item:hover {
+		color: var(--alt-text-color);
+		transition-duration: 0.5s;
+	}
+	.desktop-menu {
+		display: none;
+	}
+	.mobile-menu {
+		display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+	}
+
+	@media screen and (min-width: 600px) {
+		.logo {
+			height: 4rem;
+			width: 4rem;
+		}
+		.title {
+			padding: 0 0.25rem 0.25rem 0;
+			font-size: 2.5rem;
+		}
+	}
+
+	@media screen and (min-width: 1366px) {
+		.logo {
+			height: 5rem;
+			width: 5rem;
+			transition-duration: 0.2s;
+		}
+		.branding-container:hover .logo {
+			transform: rotate(1.25turn);
+			transition-duration: 0.7s;
+		}
+		.branding-container:hover .logo-a, .branding-container:hover .logo-w {
+			fill: var(--alt-text-color);
+		}
+		.branding-container:hover .red-letter {
+			color: var(--alt-text-color);
+			transition-duration: 0.3s;
+		}
+		.title {
+			padding: 0 0.25rem 0.25rem 0;
+			font-size: 3rem;
+		}
+		.desktop-menu {
+			display: grid;
+            grid-auto-flow: column;
+            column-gap: 1rem;
+		}
+		.mobile-menu {
+			display: none;
+		}
+	}
+</style>

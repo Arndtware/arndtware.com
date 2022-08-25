@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" preserveAspectRatio="xMidYMid">
+  <defs />
+  <style>
+      .primary-color {fill: black; stroke: black;}
+      .accent-color {fill: red; stroke: red;}
+      @media (prefers-color-scheme:dark){
+         .primary-color {fill: white; stroke: white;}
+         .accent-color {fill: red; stroke: red;}
+      }
+  </style>
+  <g transform="matrix(0.58397326,0,0,0.58356217,968.70834,218.75673)">
+    <path class="primary-color" d="m -1476.4734,685.18689 371.3839,694.18891 h 156.3722 l 156.3722,-292.2902 156.37219,292.2902 h 156.3722 L -108.21676,685.18689 H -342.77504 L -557.78681,1087.0856 -675.06595,867.86816 -518.69376,575.57812 -714.159,210.21559 h -78.1861 v 292.29003 l 39.09306,73.0725 -39.09306,73.07252 -39.09305,-73.07252 39.09305,-73.0725 V 210.21559 h -78.18611 l -195.46529,365.36253 156.37224,292.29004 -117.27914,219.21744 -215.0118,-401.89871 z"/>
+    <path class="accent-color" d="m -1476.4734,612.11437 527.7561,-986.47885 h 312.74439 l 527.75615,986.47885 h -234.55828 l -410.477,-767.26133 h -78.18611 l -410.47705,767.26133 z"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+---
+---
+
+<div class="footer-container">
+	<div class="footer-content">
+		<div class="business-info">
+			<h2>arndtware</h2>
+			<p>technology solutions</p>
+		</div>
+		<div class="other-info">
+			<a href="https://github.com/arndtware" target="_blank">
+				<img src="images/github.png" alt="Visit Arndtware on GitHub" height="32">
+			</a>
+		</div>
+	</div>
+</div>
+<style>
+	*{
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+	}
+
+	.footer-container {
+		display: flex;
+		justify-content: space-around;
+		height: 100%;
+		font-family: 'Righteous';
+	}
+
+	.footer-content {
+		width: calc(100% - 2rem);
+		border-top: 1px solid var(--primary-text-color);
+		display: grid;
+		grid-auto-flow: column;
+	}
+	.business-info {
+		align-self: center;
+	}
+	.other-info {
+		justify-self: end;
+		align-self: center;
+		max-height: 2rem;
+	}
+</style>

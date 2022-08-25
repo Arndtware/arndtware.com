@@ -1,6 +1,8 @@
 {
-  "name": "@example/basics",
-  "version": "0.0.1",
+  "name": "arndtware-website",
+  "version": "0.0.0",
+  "description": "Arndtware.com",
+  "author": "Joe Arndt",
   "private": true,
   "scripts": {
     "dev": "astro dev",

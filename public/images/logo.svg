@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1024 1024" width="1024" height="1024" preserveAspectRatio="xMidYMid meet">
+  <defs />
+  <style>
+      .primary-color {fill: black; stroke: black;}
+      .accent-color {fill: black; stroke: black;}
+      @media (prefers-color-scheme:dark){
+         .primary-color {fill: white; stroke: white;}
+         .accent-color {fill: white; stroke: white;}
+      }
+  </style>
+  <g transform="matrix(0.58347578,0,0,0.58347578,862.08547,218.80342)">
+    <circle class="primary-color" transform="translate(0,22.5)" style="fill: none; stroke-width: 75px;" cx="-600" cy="480" r="840"/>
+    <path class="primary-color" d="m -1125,630 285,570 h 120 l 120,-240 120,240 h 120 L -75,630 H -255 L -420,960 -510,780 -390,540 -540,240 h -60 v 240 l 30,60 -30,60 -30,-60 30,-60 V 240 h -60 l -150,300 120,240 -90,180 -165,-330 z"/>
+    <path class="accent-color" d="m -1125,570 405,-810 h 240 L -75,570 H -255 L -570,-60 h -60 l -315,630 z"/>
+  </g>
+</svg>
